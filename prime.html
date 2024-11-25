@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime number</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function isPrime(num) {
+            if (num < 2) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+              if (num % i === 0) return false;
+            }
+            return true;
+          }
+          
+          var num = prompt("Type a number", "");
+          if (isPrime(num)) {
+            alert("The number is prime");
+          } else {
+            alert("The number is not prime");
+          }
+    </script>
+</body>
+</html>
